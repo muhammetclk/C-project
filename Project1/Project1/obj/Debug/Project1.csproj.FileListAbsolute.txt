@@ -8,3 +8,8 @@ C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\Project1.exe
 C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\Project1.pdb
 C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.exe
 C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.pdb
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\EntityFramework.dll
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\EntityFramework.xml
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.csproj.CopyComplete

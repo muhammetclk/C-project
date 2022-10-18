@@ -46,7 +46,7 @@ namespace Project1
             this.dgwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwProduct.Location = new System.Drawing.Point(12, 246);
             this.dgwProduct.Name = "dgwProduct";
-            this.dgwProduct.Size = new System.Drawing.Size(776, 101);
+            this.dgwProduct.Size = new System.Drawing.Size(776, 169);
             this.dgwProduct.TabIndex = 0;
             // 
             // gbxCategory
@@ -59,6 +59,7 @@ namespace Project1
             this.gbxCategory.TabIndex = 1;
             this.gbxCategory.TabStop = false;
             this.gbxCategory.Text = "Category Search";
+            this.gbxCategory.Enter += new System.EventHandler(this.gbxCategory_Enter);
             // 
             // lblCategory
             // 
@@ -76,7 +77,6 @@ namespace Project1
             this.cbxCategory.Name = "cbxCategory";
             this.cbxCategory.Size = new System.Drawing.Size(278, 21);
             this.cbxCategory.TabIndex = 0;
-            
             // 
             // gbxSearch
             // 

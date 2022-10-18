@@ -16,10 +16,31 @@ namespace Project1
         {
             InitializeComponent();
         }
+        private void ListProducts()
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                dgwProduct.DataSource = context.Products.ToList();
+            }
 
-        
+        }
+        private void ListCategories()
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                dgwProduct.DataSource = context.Products.ToList();
+            }
+
+        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            ListProduct();
+        }
+
+        private void gbxCategory_Enter(object sender, EventArgs e)
         {
 
         }
