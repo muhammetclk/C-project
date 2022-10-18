@@ -59,7 +59,6 @@ namespace Project1
             this.gbxCategory.TabIndex = 1;
             this.gbxCategory.TabStop = false;
             this.gbxCategory.Text = "Category Search";
-            
             // 
             // lblCategory
             // 
@@ -96,6 +95,7 @@ namespace Project1
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(278, 20);
             this.tbxSearch.TabIndex = 1;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 
             // lblSearch
             // 

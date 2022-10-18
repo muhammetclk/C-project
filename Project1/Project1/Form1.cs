@@ -42,6 +42,15 @@ namespace Project1
                 
             }
         }
+        private void ListProductsByProductName(string key)//aratilan urunleri listeleyen metod.
+        {
+            using (NorthwindContext context = new NorthwindContext())
+
+            {
+                dgwProduct.DataSource = context.Products.Where(p => p.ProductName.ToLower().Contains(key.ToLower())).ToList();
+
+            }
+        }
 
 
 
@@ -69,6 +78,21 @@ namespace Project1
                 
             }
             
+            
+        }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            string key = tbxSearch.Text;
+            if (string.IsNullOrEmpty(key))//arama kutusu bossa tum urunleri listeler
+            {
+                ListProducts();
+            }
+            else
+            {
+                ListProductsByProductName(key);//arama kutusu doluysa arananları getırır.
+
+            }
             
         }
     }
