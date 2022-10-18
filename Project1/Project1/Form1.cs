@@ -17,7 +17,9 @@ namespace Project1
             InitializeComponent();
         }
 
-        private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

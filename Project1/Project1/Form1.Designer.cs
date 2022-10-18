@@ -76,7 +76,7 @@ namespace Project1
             this.cbxCategory.Name = "cbxCategory";
             this.cbxCategory.Size = new System.Drawing.Size(278, 21);
             this.cbxCategory.TabIndex = 0;
-            this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
+            
             // 
             // gbxSearch
             // 
@@ -115,6 +115,7 @@ namespace Project1
             this.Controls.Add(this.dgwProduct);
             this.Name = "Form1";
             this.Text = "Products";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).EndInit();
             this.gbxCategory.ResumeLayout(false);
             this.gbxCategory.PerformLayout();
