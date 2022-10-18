@@ -21,6 +21,7 @@ namespace Project1
             using (NorthwindContext context = new NorthwindContext())
             {
                 dgwProduct.DataSource = context.Products.ToList();
+                
             }
 
         }
@@ -28,7 +29,10 @@ namespace Project1
         {
             using (NorthwindContext context = new NorthwindContext())
             {
-                dgwProduct.DataSource = context.Products.ToList();
+                cbxCategory.DataSource = context.Categories.ToList();
+                cbxCategory.DisplayMember = "CategoryName";//görünecek deger
+                //Kullanıcı sectiginde CategoryName'i, urunleri filtrelemek icin sectiginde degeri CategoryId 'den alır.
+                cbxCategory.ValueMember = "CategoryId";
             }
 
         }
@@ -37,7 +41,8 @@ namespace Project1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ListProduct();
+            ListCategories();
+            ListProducts();
         }
 
         private void gbxCategory_Enter(object sender, EventArgs e)
