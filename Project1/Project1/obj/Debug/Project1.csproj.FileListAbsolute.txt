@@ -1,0 +1,10 @@
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.Form1.resources
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.Properties.Resources.resources
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.csproj.GenerateResource.cache
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\Project1.exe
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\bin\Debug\Project1.pdb
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.exe
+C:\Users\FIRAT\Desktop\ProjectDatabase\Project1\Project1\obj\Debug\Project1.pdb
