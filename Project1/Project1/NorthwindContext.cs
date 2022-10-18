@@ -15,6 +15,6 @@ namespace Project1
         //hangi nesnemiz veritabaninda neye baglayicagimizi belirtmek icin veritabanindaki tablomuza karsilik gelen bir nesneye ihtiyac var.
         //benim elimde bir Product var ve bu veritabaninda Products'a karsilik gelir.
         public DbSet<Product> Products { get; set; }
-
+        public DbSet<Category> Categories { get; set; }
     }
 }

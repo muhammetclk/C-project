@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project1.Entities
 {
-    class Category
+    public class Category
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
