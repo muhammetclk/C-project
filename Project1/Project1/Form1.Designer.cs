@@ -59,7 +59,7 @@ namespace Project1
             this.gbxCategory.TabIndex = 1;
             this.gbxCategory.TabStop = false;
             this.gbxCategory.Text = "Category Search";
-            this.gbxCategory.Enter += new System.EventHandler(this.gbxCategory_Enter);
+            
             // 
             // lblCategory
             // 
@@ -77,6 +77,7 @@ namespace Project1
             this.cbxCategory.Name = "cbxCategory";
             this.cbxCategory.Size = new System.Drawing.Size(278, 21);
             this.cbxCategory.TabIndex = 0;
+            this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
             // 
             // gbxSearch
             // 

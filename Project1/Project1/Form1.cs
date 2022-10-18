@@ -16,16 +16,14 @@ namespace Project1
         {
             InitializeComponent();
         }
-        private void ListProducts()
+        private void ListProducts()//urunleri listeleyen metod
         {
             using (NorthwindContext context = new NorthwindContext())
             {
-                dgwProduct.DataSource = context.Products.ToList();
-                
+                dgwProduct.DataSource = context.Products.ToList();             
             }
-
         }
-        private void ListCategories()
+        private void ListCategories()//catogryleri listeleyen metod
         {
             using (NorthwindContext context = new NorthwindContext())
             {
@@ -34,20 +32,44 @@ namespace Project1
                 //Kullanıcı sectiginde CategoryName'i, urunleri filtrelemek icin sectiginde degeri CategoryId 'den alır.
                 cbxCategory.ValueMember = "CategoryId";
             }
+        }
+        private void ListProductsByCategory(int categoryId )//secilen kategorideki degerleri listeleyen metod.
+        {
+            using (NorthwindContext context = new NorthwindContext())
 
+            {//urunleri listele fakat secilen catogrydekileri
+                dgwProduct.DataSource = context.Products.Where(p=>p.CategoryId==categoryId).ToList();
+                
+            }
         }
 
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             ListCategories();
             ListProducts();
         }
 
-        private void gbxCategory_Enter(object sender, EventArgs e)
-        {
+        
 
+        private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //baslangıcta metoda giderken deger olmadıgı ıcın(Daha category secmedik) patliyor.
+                //Bu yuzden try catch'ın ıcıne attık ve bos hata firlatmasini sagladik.
+                ListProductsByCategory(Convert.ToInt32(cbxCategory.SelectedValue));//secilen deger ile metoda git.
+
+            }
+            catch 
+            {
+                //bir sey yapmiyor.
+                
+            }
+            
+            
         }
     }
 }
